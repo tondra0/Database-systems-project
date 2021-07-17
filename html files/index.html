@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>COMP-4754 Project</title>
+<body>
+
+<h3>COMP-4754 Project</h3>
+<p><b>Name:</b> Meheroon Nesa Tondra</p>
+<p><b>Student Id:</b> 201555661</p>
+
+<div style="border-style: solid; border-width: thin; width:50%; padding-left: 10px; padding-bottom: 10px;">
+<form action="/cgibin/query1.py" method="GET">
+    <p><h4>This query retrieves the information about suppliers who supply a given part.</h4></p>
+    <label>Please enter a name of parts</label>
+    <input type=“text” name=“pname”><br>
+    <p>Please check the information you need</p>
+    <input type="checkbox" id="f1" name="supplierInfor" value="sid">
+    <label for="f1"> supplier id</label><br>
+    <input type="checkbox" id="f2" name="supplierInfor" value="sname">
+    <label for="f2"> supplier name</label><br>
+    <input type="checkbox" id="f3" name="supplierInfor" value="address">
+    <label for="f3"> supplier address</label><br>
+    <input type="checkbox" id="f4" name="supplierInfor" value="cost">
+    <label for="f4"> cost of the part</label><br>
+    <button type=“submit” value=“Submit”>Submit</button> 
+</form>
+</div>
+<div style="border-style: solid; border-width: thin; margin-top: 10px; width:50%; padding-left: 10px; padding-bottom: 10px;">
+<form action="/cgibin/query2.py" method="GET">
+    <p><h4>This query retrieves the names of the suppliers who have ever supplied a part with a given cost or higher.</h4></p>
+    <label>Please enter a cost</label>
+    <input type=“text” name=cost><br>
+    <button type=“submit” value=“Submit”>Submit</button> 
+</form>
+</div>
+<div style="border-style: solid; border-width: thin; margin-top: 10px; width:50%; padding-left: 10px; padding-bottom: 10px;">
+<form action="/cgibin/query3.py" method="GET">
+    <p><h4>This query retrieves the names and addresses for the suppliers who charge the most for a given part.</h4></p>
+    <label>Please enter a pid of parts</label>
+    <input type=“text” name=pid><br>
+    <button type=“submit” value=“Submit”>Submit</button> 
+</form>
+</div>
+<div style="border-style: solid; border-width: thin; margin-top: 10px; width:50%; padding-left: 10px; padding-bottom: 10px;">
+<form action="/cgibin/query4.py" method="GET">
+    <p><h4>This query retrieves the names of the parts with the given color which were supplied by all the suppliers in the given address.</h4></p>
+    <label>Please enter a color of parts</label>
+    <input type=“text” name=color><br>
+    <label>Please enter an address</label>
+    <input type=“text” name=address><br>
+    <button type=“submit” value=“Submit”>Submit</button> 
+</form>
+</div>
+<div style="border-style: solid; border-width: thin; margin-top: 10px; width:50%; padding-left: 10px; padding-bottom: 10px;">
+<form action="/cgibin/query5.py" method="GET">
+    <p><h4>This query retrieves the sids and names of the suppliers in the given address who do not supply any part.</h4></p>
+    <label>Please enter an address of a supplier</label>
+    <input type=“text” name=address><br>
+    <button type=“submit” value=“Submit”>Submit</button> 
+</form>
+</div>
+
+</body>
+</html> 
